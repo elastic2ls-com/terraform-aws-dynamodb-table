@@ -50,12 +50,6 @@ variable "read_capacity" {
   default     = null
 }
 
-variable "point_in_time_recovery_enabled" {
-  description = "Enable point-in-time recovery"
-  type        = bool
-  default     = false
-}
-
 variable "ttl_enabled" {
   description = "Enalbe TTL"
   type        = bool

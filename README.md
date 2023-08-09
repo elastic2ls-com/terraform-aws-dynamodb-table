@@ -13,17 +13,14 @@ This module helps you create a dynamoDB table. It includes the following:
 * autoscaling settings
 
 ## Sample Usage
-This module requires 2 arguments.
-* `cluster_name` simply the name of the cluster
-* `log_group` log group name
+This module requires a wide set of arguments. Please have a look at variables.tf
 
 ```
 module "terraform-aws-dynamodb-table" {
 source = "git@github.com:elastic2ls/terraform-aws-dynamodb-table.git"
 
-  cluster_name   = "fargate-ecs"
-  log_group      = "fargate-ecs-log-group"
-}
+  name             = elastic2ls-dynamodb
+  ...
 ```
 
 The module can also be found in the Terraform Registry https://registry.terraform.io/modules/elastic2ls-com/dynamodb-table/aws/latest.
